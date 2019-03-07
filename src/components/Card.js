@@ -1,5 +1,7 @@
+/* eslint-disable react/require-default-props */
 import React from 'react';
-import { styled } from '@material-ui/styles';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -8,25 +10,40 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Map from './Map';
 
-const CardJob = () => {
+const CardJob = (props) => {
+  const {
+    title,
+    company,
+    address,
+    onSelectedJob,
+    width,
+    height,
+  } = props;
+
   return (
-    <JobCard>
+    <JobCard width={width} height={height}>
       <CardActionArea>
-        <Map width="400px" height="100px"/>
+        <Map
+          width={width}
+          height="200px"
+          zoom={16}
+          lat={address.coordinates.latitude}
+          long={address.coordinates.longitude}/>
         <CardContent>
-          <Job gutterBottom variant="h5" component="h2">
-            Garçom Hospitalar
+          <Job variant="h5" component="h2">
+            {title}
           </Job>
-          <Typography gutterBottom variant="h6" component="h3">
-            Rede D'OR SAO LUIZ
+          <Typography variant="h6" component="h3">
+            {company}
           </Typography>
           <Typography component="p">
-            Nova Iguaçu - RJ - 26215342 - 25,8 km de você
+            {address.address} - {address.city} - {address.state}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <ButtonCard
+          onClick={onSelectedJob}
           size="large"
           variant="outlined">
           Candidatar
@@ -36,21 +53,32 @@ const CardJob = () => {
   );
 };
 
-const JobCard = styled(Card)({
-  width: '400px',
-});
+CardJob.propTypes = {
+  title: PropTypes.string.isRequired,
+  company: PropTypes.string.isRequired,
+  onSelectedJob: PropTypes.func.isRequired
+};
 
-const Job = styled(Typography)({
-  color: '#00c662',
-  fontSize: '24px',
-  paddingTop: '75px',
-  marginBottom: '5px',
-});
+const JobCard = styled(Card)`
+  width: ${props => props.width}px;
+  height: ${props => props.height}px;
+  margin-bottom: 15px;
+  &:last-child {
+   margin-bottom: 65px;
+  }
+`;
 
-const ButtonCard = styled(Button)({
-  width: '100%',
-  color: '#00c662 !important',
-  borderColor: '#00c662 !important',
-});
+const Job = styled(Typography)`
+  color: #00c662 !important;
+  font-size: 24px !important;
+  margin-top: 200px !important;
+  margin-bottom: 5px !important;
+`;
+
+const ButtonCard = styled(Button)`
+  width: 100%;
+  color: #00c662 !important;
+  border-color: #00c662 !important;
+`;
 
 export default CardJob;

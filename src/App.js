@@ -1,13 +1,13 @@
 import React from 'react';
-import CardJob from './components/Card';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import JobsContainer from './containers/JobsContainer';
 
 const App = () => {
   return (
-    <div className="App">
+    <div>
       <Header/>
-      <CardJob/>
+      <JobsContainer/>
       <Footer/>
     </div>
   );
