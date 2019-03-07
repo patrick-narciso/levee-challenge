@@ -1,12 +1,14 @@
 import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { render } from 'react-dom';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { createLogger } from 'redux-logger';
 import thunk from 'redux-thunk';
-import reducer from './reducers/jobs';
 import { getAllJobs } from './actions';
+import reducer from './reducers/jobs';
 import App from './App';
+import JobContainer from './containers/JobContainer';
 import * as serviceWorker from './serviceWorker';
 
 const middleware = [ thunk ];
@@ -23,7 +25,12 @@ store.dispatch(getAllJobs());
 
 render(
   <Provider store={store}>
-    <App />
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact component={App} />
+        <Route path="/jobs/:id" component={JobContainer} />
+      </Switch>
+    </BrowserRouter>
   </Provider>,
   document.getElementById('root')
 );
