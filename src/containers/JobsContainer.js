@@ -30,6 +30,7 @@ const Container = styled.div`
   flex-wrap: wrap;
   align-items-center;
   margin-top: 100px;
+  max-width: 1280px;
 `;
 
 const mapStateToProps = state => ({
