@@ -28,7 +28,7 @@ render(
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={App} />
-        <Route path="/jobs/:id" component={JobContainer} />
+        <Route path="/detalhes" component={JobContainer} />
       </Switch>
     </BrowserRouter>
   </Provider>,
