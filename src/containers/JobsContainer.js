@@ -12,7 +12,7 @@ import Card from '../components/Card';
 
 const renderJobDetails = (jobId, props) => {
   const { selectJobById, history } = props;
-  setTimeout(() => selectJobById(jobId), 200);
+  selectJobById(jobId);
   history.push({pathname: 'detalhes', state: {id: jobId}});
 };
 

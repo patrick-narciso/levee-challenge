@@ -57,7 +57,7 @@ const CardJob = (props) => {
 CardJob.propTypes = {
   title: PropTypes.string.isRequired,
   company: PropTypes.string.isRequired,
-  onSelectedJob: PropTypes.func.isRequired
+  onSelectedJob: PropTypes.func
 };
 
 const JobCard = styled(Card)`

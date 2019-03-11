@@ -7,7 +7,7 @@ const receiveJobs = jobs => ({
 });
 
 export const getAllJobs = () => dispatch => {
-  getJobs().then(jobs => dispatch(receiveJobs(jobs)));
+  return getJobs().then(jobs => dispatch(receiveJobs(jobs)));
 };
 
 const selectJob = job => ({
@@ -16,7 +16,7 @@ const selectJob = job => ({
 });
 
 export const selectJobById = jobId => dispatch => {
-  getJob(jobId).then(job => dispatch(selectJob(job)));
+  return getJob(jobId).then(job => dispatch(selectJob(job)));
 };
 
 const showInterviews = interviews => ({
@@ -25,5 +25,5 @@ const showInterviews = interviews => ({
 });
 
 export const openModalInterviews = interviews => dispatch => {
-  dispatch(showInterviews(interviews));
+  return dispatch(showInterviews(interviews));
 };
