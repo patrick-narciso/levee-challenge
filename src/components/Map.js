@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 
 const MapComponent = (props) => {
@@ -18,7 +17,7 @@ const MapComponent = (props) => {
   };
 
   return (
-    <GoogleMap
+    <Map
       width={width}
       google={google}
       zoom={zoom}
@@ -30,14 +29,9 @@ const MapComponent = (props) => {
       <Marker
         lat
         long/>
-    </GoogleMap>
+    </Map>
   );
 };
-
-const GoogleMap = styled(Map)`
-  width: ${props => props.width}px;
-`;
-
 
 export default GoogleApiWrapper({
   apiKey: 'AIzaSyCwDkdljpC5FZGpZd80Xstr411l_vjBYEo'
