@@ -1,0 +1,387 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer should render correctly with no props 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <ForwardRef
+        position="fixed"
+      >
+        <WithStyles(Toolbar)>
+          <WithStyles(Typography)
+            color="inherit"
+            variant="h6"
+          >
+            Levee Challenge
+          </WithStyles(Typography)>
+        </WithStyles(Toolbar)>
+      </ForwardRef>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <WithStyles(Toolbar)>
+          <WithStyles(Typography)
+            color="inherit"
+            variant="h6"
+          >
+            Levee Challenge
+          </WithStyles(Typography)>
+        </WithStyles(Toolbar)>,
+        "position": "fixed",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <WithStyles(Typography)
+            color="inherit"
+            variant="h6"
+          >
+            Levee Challenge
+          </WithStyles(Typography)>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Levee Challenge",
+            "color": "inherit",
+            "variant": "h6",
+          },
+          "ref": null,
+          "rendered": "Levee Challenge",
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "Naked": [Function],
+        "displayName": "WithStyles(Styled(WithStyles(AppBar)))",
+        "options": Object {},
+        "propTypes": Object {
+          "classes": [Function],
+          "innerRef": [Function],
+        },
+        "render": [Function],
+      },
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <ForwardRef
+          position="fixed"
+        >
+          <WithStyles(Toolbar)>
+            <WithStyles(Typography)
+              color="inherit"
+              variant="h6"
+            >
+              Levee Challenge
+            </WithStyles(Typography)>
+          </WithStyles(Toolbar)>
+        </ForwardRef>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <WithStyles(Toolbar)>
+            <WithStyles(Typography)
+              color="inherit"
+              variant="h6"
+            >
+              Levee Challenge
+            </WithStyles(Typography)>
+          </WithStyles(Toolbar)>,
+          "position": "fixed",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <WithStyles(Typography)
+              color="inherit"
+              variant="h6"
+            >
+              Levee Challenge
+            </WithStyles(Typography)>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Levee Challenge",
+              "color": "inherit",
+              "variant": "h6",
+            },
+            "ref": null,
+            "rendered": "Levee Challenge",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "Naked": [Function],
+          "displayName": "WithStyles(Styled(WithStyles(AppBar)))",
+          "options": Object {},
+          "propTypes": Object {
+            "classes": [Function],
+            "innerRef": [Function],
+          },
+          "render": [Function],
+        },
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Header should render correctly with no props 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <ForwardRef
+        position="fixed"
+      >
+        <WithStyles(Toolbar)>
+          <WithStyles(Typography)
+            color="inherit"
+            variant="h6"
+          >
+            Levee Challenge
+          </WithStyles(Typography)>
+        </WithStyles(Toolbar)>
+      </ForwardRef>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <WithStyles(Toolbar)>
+          <WithStyles(Typography)
+            color="inherit"
+            variant="h6"
+          >
+            Levee Challenge
+          </WithStyles(Typography)>
+        </WithStyles(Toolbar)>,
+        "position": "fixed",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <WithStyles(Typography)
+            color="inherit"
+            variant="h6"
+          >
+            Levee Challenge
+          </WithStyles(Typography)>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Levee Challenge",
+            "color": "inherit",
+            "variant": "h6",
+          },
+          "ref": null,
+          "rendered": "Levee Challenge",
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "Naked": [Function],
+        "displayName": "WithStyles(Styled(WithStyles(AppBar)))",
+        "options": Object {},
+        "propTypes": Object {
+          "classes": [Function],
+          "innerRef": [Function],
+        },
+        "render": [Function],
+      },
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <ForwardRef
+          position="fixed"
+        >
+          <WithStyles(Toolbar)>
+            <WithStyles(Typography)
+              color="inherit"
+              variant="h6"
+            >
+              Levee Challenge
+            </WithStyles(Typography)>
+          </WithStyles(Toolbar)>
+        </ForwardRef>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <WithStyles(Toolbar)>
+            <WithStyles(Typography)
+              color="inherit"
+              variant="h6"
+            >
+              Levee Challenge
+            </WithStyles(Typography)>
+          </WithStyles(Toolbar)>,
+          "position": "fixed",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <WithStyles(Typography)
+              color="inherit"
+              variant="h6"
+            >
+              Levee Challenge
+            </WithStyles(Typography)>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Levee Challenge",
+              "color": "inherit",
+              "variant": "h6",
+            },
+            "ref": null,
+            "rendered": "Levee Challenge",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "Naked": [Function],
+          "displayName": "WithStyles(Styled(WithStyles(AppBar)))",
+          "options": Object {},
+          "propTypes": Object {
+            "classes": [Function],
+            "innerRef": [Function],
+          },
+          "render": [Function],
+        },
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
