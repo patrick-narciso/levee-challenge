@@ -18,3 +18,12 @@ const selectJob = job => ({
 export const selectJobById = jobId => dispatch => {
   getJob(jobId).then(job => dispatch(selectJob(job)));
 };
+
+const showInterviews = interviews => ({
+  type: types.SHOW_INTERVIEWS,
+  interviews,
+});
+
+export const openModalInterviews = interviews => dispatch => {
+  dispatch(showInterviews(interviews));
+};

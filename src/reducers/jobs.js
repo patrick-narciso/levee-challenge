@@ -1,8 +1,9 @@
-import { RECEIVE_JOBS, SELECT_JOB } from '../constants/ActionTypes';
+import { RECEIVE_JOBS, SELECT_JOB, SHOW_INTERVIEWS } from '../constants/ActionTypes';
 
 const INITIAL_STATE = {
   jobs: [],
-  job: {}
+  job: '',
+  interviews: 'close',
 };
 
 const reducer = (state = INITIAL_STATE, action) => {
@@ -20,6 +21,12 @@ const reducer = (state = INITIAL_STATE, action) => {
       newState = {
         ...state,
         job: action.job,
+      };
+      break;
+    case SHOW_INTERVIEWS:
+      newState = {
+        ...state,
+        interviews: action.interviews,
       };
       break;
     default:

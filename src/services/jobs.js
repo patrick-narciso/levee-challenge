@@ -9,5 +9,5 @@ export const getJobs = () => {
 export const getJob = jobId => {
   return client.get(`jobs/${jobId}`).then(response => {
     return response.data;
-  })
+  });
 };
