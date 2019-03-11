@@ -6,8 +6,8 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Button from './Button';
 import Map from './Map';
 
 const CardJob = (props) => {
@@ -24,7 +24,7 @@ const CardJob = (props) => {
     <JobCard width={width} height={height}>
       <CardActionArea>
         <Map
-          width={width}
+          width
           height="200px"
           zoom={16}
           lat={address.coordinates.latitude}
@@ -42,12 +42,13 @@ const CardJob = (props) => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <ButtonCard
+        <Button
           onClick={onSelectedJob}
           size="large"
-          variant="outlined">
+          variant="outlined"
+          width="100%">
           Candidatar
-        </ButtonCard>
+        </Button>
       </CardActions>
     </JobCard>
   );
@@ -60,11 +61,11 @@ CardJob.propTypes = {
 };
 
 const JobCard = styled(Card)`
-  width: ${props => props.width}px;
-  height: ${props => props.height}px;
-  margin-bottom: 15px;
-  &:last-child {
-   margin-bottom: 65px;
+  width: ${props => props.width};
+  height: ${props => props.height};
+  margin-bottom: 10px;
+  @media(max-width: 768px) {
+    flex-grow: 2;
   }
 `;
 
@@ -73,12 +74,6 @@ const Job = styled(Typography)`
   font-size: 24px !important;
   margin-top: 200px !important;
   margin-bottom: 5px !important;
-`;
-
-const ButtonCard = styled(Button)`
-  width: 100%;
-  color: #00c662 !important;
-  border-color: #00c662 !important;
 `;
 
 export default CardJob;
